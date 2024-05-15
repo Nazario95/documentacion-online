@@ -4,8 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doc-control</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="./css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/button-menu.css">
+    <link rel="stylesheet" href="./css/tarjetas-presentacion.css">
+    <link rel="stylesheet" href="./css/style-timeline.css">  
 </head>
 <body>
-    
+    <!-- pc mode -->
+    <div class="main-container pc d-none">
+        <div id="menu" class="menu-sidebar">
+            <!-- menu-siderbar -->
+        </div>
+        <div id="content" class="contenido-main">
+            <!-- contenido-main-pc-->
+            <!-- Tarjetas-de-presentacion-->
+            <h2 class="text-center">GESTION EXPRESS DE DOCUMENTACION</h2>
+            <div class="cartas-presentacion p-2 d-flex">                
+                <div class="card m-2 card-1">
+                    
+                </div>
+
+                <div class="card m-2 card-2">
+                    
+                </div>
+
+                <div class="card m-2 card-3">
+                    
+                </div>
+            </div>  
+
+            <!-- Buscador-gestoria-->
+            <div class="menu-gestorias">
+                <div>
+                    <h2 class="text-center">Quieres tranmitar tu documentacion?</h2>
+                </div>
+               <div class="selects">
+                    <div class="doc-type">
+                        <label>Que tipo de documento quieres tramitar?</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="x" disabled>Elija un tipo</option>
+                        </select>
+                    </div>
+                    <div class="doc-gestion">
+                        <label>Gestorias disponibles</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="x" disabled>Seleccione una gestoria</option>
+                        </select>
+                    </div>
+                    <div id="btn-action d-flex">
+                        <button type="button" class="btn btn-info  text-light">Tramitar ahora</button>
+                        <button type="button" class="btn btn-primary">Ver gestoria</button>
+                    </div>
+               </div>
+            </div>
+
+            <!-- actiones -->
+            <div class="my-5 totals text-light">
+                <div>
+                    <h2 class="text-center pt-2">0</h2>
+                    <p class="text-center">Expedientes tramitados</p>
+                </div>
+                <div>
+                    <h2 class="text-center pt-2">0</h2>
+                    <p class="text-center">Gestorias disponibles</p>
+                </div>
+            </div>
+
+            <div id="doc-seach" class="doc-seach">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 doc-seach-input" type="search" placeholder="Buscar expediente" aria-label="Search">
+                    <button class="btn btn-info doc-seach-btn text-light">Buscar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- mobile mode -->
+    <div class="mobile">
+        <div class="m-2">
+            <button class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="#fff" d="M19 12.75H5a.75.75 0 0 1 0-1.5h14a.75.75 0 0 1 0 1.5m0-4.5H5a.75.75 0 0 1 0-1.5h14a.75.75 0 0 1 0 1.5m0 9H5a.75.75 0 0 1 0-1.5h14a.75.75 0 0 1 0 1.5"/></svg>
+            </button>
+        </div>
+
+        <div class="offcanvas offcanvas-start bg-info" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-light" id="offcanvasScrollingLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="menu-sidebar">
+                    <!-- menu-siderbar -->
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido-main">
+            <div>
+                <h2 class="text-center">GESTION EXPRESS DE DOCUMENTACION</h2>
+            </div>
+
+            <div>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card m-2 card-1">
+                            
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card m-2 card-2">
+                            
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="card m-2 card-3">
+                            
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Buscador-gestoria-->
+            <div class="menu-gestorias">
+                <div>
+                    <h2 class="text-center">Quieres tranmitar tu documentacion?</h2>
+                </div>
+               <div class="selects">
+                    <div class="doc-type mb-3">
+                        <label>Que tipo de documento quieres tramitar?</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="x" disabled>Elija un tipo</option>
+                        </select>
+                    </div>
+                    <div class="doc-gestion">
+                        <label>Gestorias disponibles</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="x" disabled>Seleccione una gestoria</option>
+                        </select>
+                    </div>
+                    <div id="btn-action" class="d-flex justify-content-center my-4">
+                        <button type="button" class="btn btn-info text-light">Tramitar ahora</button>
+                        <button type="button" class="btn btn-primary mx-3">Acerca de la gestoria</button>
+                    </div>
+               </div>
+            </div>
+
+            <!-- total expedientes -->
+            <div class="my-5 totals text-light">
+                <div>
+                    <h2 class="text-center pt-2">0</h2>
+                    <p class="text-center">Expedientes tramitados</p>
+                </div>
+                <div>
+                    <h2 class="text-center pt-2">0</h2>
+                    <p class="text-center">Gestorias disponibles</p>
+                </div>
+            </div>
+
+            <!-- buscador -->
+            <div class="doc-search">
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- ACCIONES -->  
+    <!-- Modal -->
+    <div class="modal fade" id="cargar-perfil" tabindex="-1" aria-labelledby="cargando-perfil" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="cargando-perfil">Acceder a mi perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex">
+                <input class="form-control me-2 doc-seach-input cargar-perfil" type="search" placeholder="Introduzca un nombre de usuario" aria-label="Search">
+                <button type="button" class="btn btn-info text-light btn-cargar-perfil">Cargar</button>
+                <div class="spinner-border text-info mx-1 d-none sniper-cargar-perfil" role="status">
+                </div>                
+            </div>
+            <p class="text-success text-center d-none msg-modal-perfil-success">Perfil cargado correctamente</p>
+            <p class="text-danger text-center d-none msg-modal-perfil-error">perfil no encontrado. Pulse <span class="text-success nuevo-perfil"role="button">aqui </span>para registrar como nuevo perfil.</p>
+            <p class="text-success text-dark text-center d-none recuperar-perfil">Click <span class="text-success"  role="button">aqui</span> para solicitar recuperacion de perfil</p>
+            <p class="text-success text-warning text-center d-none">Error. recargue la pagina e intentelo de nuevo</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- MODAL GLOBAL -->
+    <div class="modal fade" id="modal-global" tabindex="-1" aria-labelledby="modal-global-all" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 modal-titulo" id="cargando-perfil">nombre modal</h1>
+                    <!-- btn-cerrar -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div>
+                    <!-- contenido del modal -->
+                    <p class="contenido-modal-global text-dark p-2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/perfil.js" type="module"></script>
+    <script src="./js/component.js" type="module"></script>
+    <script src="./js/app.js" type="module"></script>   
+    <script src="./js/tramitacion.js" type="module"></script>  
+    <script src="./js/historial.js" type="module"></script>  
 </body>
 </html>

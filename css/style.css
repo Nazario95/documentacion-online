@@ -1,0 +1,116 @@
+/* COLORES 
+    - Azul-bg: 0dcaf0 
+*/
+
+/* txt-color */
+p{
+    color: white!important;
+}
+/* media query pc */
+@media (min-width:768px){
+    .main-container{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 100vh;
+    }
+    #menu{
+        background-color: #0dcaf0;
+        
+    } 
+}
+
+@media (min-width:1280px){
+    .button{
+        font-size:0.9rem!important;
+    }
+    .main-container{
+        grid-template-columns: 15% 85%;
+    }
+    .table{
+        width: 70%!important;
+    }
+}
+
+/* ------- Selects ----- */
+.selects{
+    width: 80%;
+    margin: 1rem auto;
+}
+@media (min-width:768px){
+    .selects{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .doc-type, .doc-gestion{
+        margin: 0 .5rem;
+        width: 300px;
+    }
+    .btn-action{
+        margin: 0 .5rem;
+        width: 500px!important;
+    }
+    .btn-action button{
+        width: 250px
+    }
+}
+
+/* ---------- Expedientes -------- */
+.totals{
+    margin: 0 auto;
+    width: 80%;
+}
+.totals div{
+    background-color: #0dcaf0;
+    
+}
+
+@media (min-width:768px){
+    .totals{
+        display: flex;
+        justify-content: center;
+    }
+
+    .totals div{
+        width: 350px;
+        height: 100px;
+        margin-left: 1rem;
+        padding: 0 2rem;
+        background-color: #0dcaf0;
+    }
+
+    .table{
+        width: 80%;
+    }
+}
+/* ------bsucador-------- */
+.doc-seach{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.doc-seach-input{
+    width: 70%;
+}
+.doc-seach-btn{
+    width: 20%;
+}
+
+
+/* Seguimiento-expedientes */
+.seguimiento{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.border-danger p {
+    opacity:.4;
+}
+
+/* -------- ver historial */
+.tabla{
+    min-width: 600px;
+}
+.table{
+    width: 95%;
+}
